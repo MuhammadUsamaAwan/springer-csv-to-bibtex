@@ -51,7 +51,7 @@ const App = () => {
   return (
     <section className='grid justify-center mt-20'>
       <h1 className='text-center text-3xl mb-10 font-semibold'>
-        Springer SCV To BibTex
+        Springer CSV To BibTex
       </h1>
       {loading ? (
         <h3 className='text-center'>
