@@ -24,7 +24,7 @@ const App = () => {
         for (let i = 0; i < results?.data?.length; i++) {
           try {
             const res = await axios.get(
-              `http://dx.doi.org/${results?.data[i]['Item DOI']}`,
+              `https://dx.doi.org/${results?.data[i]['Item DOI']}`,
               {
                 headers: {
                   Accept: 'text/bibliography; style=bibtex',
