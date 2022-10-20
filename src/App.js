@@ -32,9 +32,10 @@ const App = () => {
               }
             )
             responseData.push(res?.data)
-            setOutputLength(prev => prev + 1)
           } catch (err) {
             console.error(err)
+          } finally {
+            setOutputLength(prev => prev + 1)
           }
         }
         const blob = new Blob(responseData, {
